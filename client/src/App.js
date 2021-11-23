@@ -49,7 +49,7 @@ function App() {
   };
 
   const deleteContact = (id) => {
-    Axios.delete(`http://localhost:3001/${id}`).then(() => {
+    Axios.delete(`http://localhost:3001/delete/${id}`).then(() => {
       setContacts(contacts.filter((contact) => contact.id !== id));
     });
   };
